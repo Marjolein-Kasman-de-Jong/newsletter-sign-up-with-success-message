@@ -9,7 +9,17 @@
     3.5 Buttons
 4.  Layout
     4.1 Sign up card
+        4.1.1 Sign up card image
+        4.1.2 Sign up card article
+              4.1.2.1 Sign up card article header
+              4.1.2.2 Sign up card article ul
+                      4.1.2.2.1 Sign up card article ul li
+                                4.1.2.2.1.1 Sign up card article ul li image
+              4.1.2.3 Sign up card article footer
+                      4.1.2.3.1 Sign up card article footer form label and error message
     4.2 Success message modal
+5.  Components
+    5.1 Buttons
 ---------------------------------------------------------------------- */
 
 /* 1. CSS reset */
@@ -32,7 +42,12 @@ button {
 
 :root {
     --dark-navy: #242742;
+    --pale-navy: #36384D;
+    --pale-navy-transparent: rgba(25, 24, 43, 0.25);
     --vermillion: #FF6155;
+    --vermillion-transparent: rgba(255, 97, 85, 0.15);
+    --box-shadow: rgba(255, 97, 85, 0.50);
+    --linear-gradient: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
     --white: #FFF;
 }
 
@@ -109,8 +124,7 @@ input[type="email"]::placeholder {
 
 /* 3.5 Buttons */
 
-button,
-input[type="submit"] {
+button.roboto-bold {
     font-size: 1rem;
     line-height: 150%;
     color: var(--white);
@@ -118,10 +132,172 @@ input[type="submit"] {
 
 /* 4. Layout */
 
+body {
+    background-color: var(--pale-navy);
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+img {
+    width: 100%;
+    display: block; /* Removes extra whitespace below image */
+}
+
 /* 4.1 Sign up card */
+
+.sign-up-card {
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+    background-color: var(--white);
+}
+
+@media screen and (min-width: 769px) {
+    .sign-up-card {
+        width: 95%;
+        max-width: 1300px;
+        min-height: unset;
+        margin: unset;
+        padding: 24px 24px 24px 64px;
+        border-radius: 36px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: unset;
+        box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sign-up-card {
+        width: 64.44%;
+    }
+}
+
+/* 4.1.1 Sign up card image */
+
+@media screen and (min-width: 769px) {
+    .sign-up-card .image-wrapper {
+        width: 47.62%;
+    }
+}
+
+/* 4.1.2 Sign up card article */
+
+.sign-up-card article {
+    width: 87.2%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+    .sign-up-card article {
+        width: 44.76%;
+        margin: unset;
+    }
+}
+
+/* 4.1.2.1 Sign up card article header */
+
+.sign-up-card article header {
+    margin-bottom: 24px;
+}
+
+/* 4.1.2.2 Sign up card article ul */
+
+.sign-up-card article ul {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+/* 4.1.2.2.1 Sign up card article ul li */
+
+.sign-up-card article ul li {
+    display: flex;
+    gap: 16px;
+}
+
+/* 4.1.2.2.1.1 Sign up card article ul li image */
+
+.sign-up-card article ul li .image-wrapper {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-card article ul li .image-wrapper img {
+    width: 21px;
+    height: 21px;
+}
+
+/* 4.1.2.3 Sign up card article footer */
+
+.sign-up-card article footer {
+    margin-top: 40px;
+}
+
+/* 4.1.2.3.1 Sign up card article footer form label and error message */
+
+.sign-up-card article footer form .label-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 4.1.2.3.2 Sign up card article footer form input */
+
+.sign-up-card article footer form input[type="email"] {
+    width: 100%;
+    margin-top: 8px;
+    padding: 16px 24px;
+    border: 1px solid var(--pale-navy-transparent);
+    border-radius: 8px;
+}
+
+.sign-up-card article footer form input[type="email"].error {
+    border: 1px solid var(--vermillion);
+    background: var(--vermillion-transparent);
+}
 
 /* 4.2 Success message modal */
 
 .success-message-modal {
     display: none;
+}
+
+/* 5. Components */
+
+/* 5.1 Buttons */
+
+button,
+input[type="submit"] {
+    margin-top: 24px;
+    width: 100%;
+    padding: 18px 10px 14px 10px;
+    background-color: var(--dark-navy);
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 769px) {
+
+    button:hover,
+    input[type="submit"]:hover {
+        cursor: pointer;
+        background: var(--linear-gradient);
+        box-shadow: 0px 16px 32px 0px var(--box-shadow);
+    }
 }

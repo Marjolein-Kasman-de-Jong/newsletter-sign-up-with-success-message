@@ -292,7 +292,7 @@ button {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    transition: background 0.5s ease, box-shadow 0.5s ease;
+    transition: background 500ms ease, box-shadow 500ms ease;
     z-index: 1; /* Ensure button content is above the pseudo-element */
 }
 
@@ -305,7 +305,7 @@ button::before {
     height: 100%;
     background: var(--linear-gradient);
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 500ms ease;
     z-index: -1; /* Place the pseudo-element behind the button content */
 }
 

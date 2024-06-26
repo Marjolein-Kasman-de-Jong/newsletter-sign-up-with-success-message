@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
     <title>Newsletter Sign Up With Success Message</title>
 </head>
@@ -18,13 +21,13 @@
                     alt="A computer screen, a browser window, a graph and a speed sign with the number 94 on it">
             </picture>
         </div>
-        <article>
+        <article class="roboto-regular">
             <header>
-                <h1>
+                <h1 class="primary-heading roboto-bold">
                     Stay updated!
                 </h1>
             </header>
-            <p>
+            <p >
                 Join 60,000+ product managers receiving monthly updates on:
             </p>
             <ul>
@@ -41,15 +44,15 @@
             <footer>
                 <form action="">
                     <div class="label-wrapper">
-                        <label for="email">
+                        <label for="email" class="roboto-bold">
                             Email address
                         </label>
-                        <p>
+                        <p class="error-message roboto-bold">
                             Valid email required
                         </p>
                     </div>
-                    <input type="email" id="email" placeholder="email@company.com" required>
-                    <input type="submit" value="Subscribe to monthly newsletter">
+                    <input type="email" class="roboto-regular" id="email" placeholder="email@company.com" required>
+                    <input type="submit" class="roboto-bold" value="Subscribe to monthly newsletter">
                 </form>
             </footer>
         </article>
@@ -61,14 +64,14 @@
             <img src="assets\icon-success.svg" alt="Success icon">
         </div>
     </div>
-    <article>
+    <article class="roboto-regular">
         <header>
-            <h2>
+            <h2 class="roboto-bold">
                 Thanks for subscribing!
             </h2>
         </header>
         <p>
-            A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button
+            A confirmation email has been sent to <span class="roboto-bold">ash@loremcompany.com</span>. Please open it and click the button
             inside to
             confirm your subscription.
         </p>

@@ -1,0 +1,114 @@
+/* ----------------------------------------------------------------------
+1.  CSS reset
+2.  Colors
+3.  Typography
+    3.1 Headings
+    3.2 Paragraphs
+    3.3 Label and error message
+    3.4 Input
+    3.5 Buttons
+---------------------------------------------------------------------- */
+
+/* 1. CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* 2. Colors */
+
+:root {
+    --dark-navy: #242742;
+    --vermillion: #FF6155;
+    --white: #FFF;
+}
+
+/* 3. Typography */
+
+html {
+    font-size: 16px;
+}
+
+*[class*="roboto"] {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: var(--dark-navy);
+}
+
+.roboto-regular {
+    font-weight: 400;
+}
+
+.roboto-bold {
+    font-weight: 700;
+}
+
+/* 3.1 Headings */
+
+h1,
+h2 {
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+
+    h1,
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/* 3.2 Paragraphs */
+
+p {
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+/* 3.3 Label and error message */
+
+label,
+.error-message {
+    font-size: .75rem;
+    line-height: 150%;
+}
+
+.error-message {
+    color: var(--vermillion);
+}
+
+/* 3.4 Input */
+
+input[type="email"] {
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--dark-navy);
+}
+
+input[type="email"].error {
+    color: var(--vermillion);
+}
+
+input[type="email"]::placeholder {
+    opacity: .5;
+}
+
+/* 3.5 Buttons */
+
+button,
+input[type="submit"] {
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--white);
+}

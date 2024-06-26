@@ -7,6 +7,9 @@
     3.3 Label and error message
     3.4 Input
     3.5 Buttons
+4.  Layout
+    4.1 Sign up card
+    4.2 Success message modal
 ---------------------------------------------------------------------- */
 
 /* 1. CSS reset */
@@ -111,4 +114,14 @@ input[type="submit"] {
     font-size: 1rem;
     line-height: 150%;
     color: var(--white);
+}
+
+/* 4. Layout */
+
+/* 4.1 Sign up card */
+
+/* 4.2 Success message modal */
+
+.success-message-modal {
+    display: none;
 }

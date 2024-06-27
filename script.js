@@ -38,8 +38,8 @@ openButton.onclick = function (e) {
 closeButton.onclick = function () {
     // Hide modal
     modal.style.display = "none";
-    // Show sign up card
-    signUpCard.style.display = "flex";
     // Clear input
     input.value = '';
+    // Show sign up card
+    signUpCard.style.display = "flex";
 }

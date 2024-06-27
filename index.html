@@ -13,7 +13,7 @@
 
 <body>
     <!-- Sign up card -->
-    <main class="sign-up-card">
+    <main class="sign-up-card" id="sign-up-card">
         <div class="image-wrapper">
             <picture>
                 <source media="(min-width: 1025px )" srcset="assets\illustration-sign-up-desktop.svg">
@@ -67,7 +67,7 @@
                         </p>
                     </div>
                     <input type="email" class="roboto-regular" id="email" placeholder="email@company.com" autocomplete="email" required>
-                    <button type="submit" class="roboto-bold">
+                    <button type="submit" class="roboto-bold" id="subscribe-button">
                         Subscribe to monthly newsletter
                     </button>
                 </form>
@@ -76,7 +76,7 @@
     </main>
 
     <!-- Success message modal -->
-    <div class="success-message-modal">
+    <div class="success-message-modal" id="success-message-modal">
         <div class="image-wrapper">
             <img src="assets\icon-success.svg" alt="Success icon">
         </div>
@@ -93,12 +93,14 @@
                 confirm your subscription.
             </p>
             <footer>
-                <button type="button" class="roboto-bold">
+                <button type="button" class="roboto-bold" id="dismiss-button">
                     Dismiss message
                 </button>
             </footer>
         </article>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>

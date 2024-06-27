@@ -26,6 +26,7 @@
                       4.2.2.2.1 Button
 5.  Components
     5.1 Buttons
+6. Animations
 ---------------------------------------------------------------------- */
 
 /* 1. CSS reset */
@@ -163,11 +164,11 @@ img {
     min-height: 100vh;
     margin: 0 auto;
     padding-bottom: 40px;
-    display: flex;
+    display: flex; /* Show by default*/
     flex-direction: column;
     gap: 40px;
     background-color: var(--white);
-    display: none; /* Temporary, show by default */
+    animation: opacity-transition 500ms linear;
 }
 
 @media screen and (min-width: 1025px) {
@@ -284,9 +285,10 @@ img {
     top: 149px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex; /* Hide by default */
+    display: none; /* Hide by default */
     flex-direction: column;
     background-color: var(--white);
+    animation: opacity-transition 500ms linear;
 }
 
 @media screen and (min-width: 1025px) {
@@ -383,4 +385,11 @@ button:hover::before {
         background: transparent; /* Set to transparent to let the gradient show through */
         box-shadow: 0px 16px 32px 0px var(--box-shadow);
     }
+}
+
+/* 6. Animations */
+
+@keyframes opacity-transition {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

@@ -260,6 +260,11 @@ img {
     justify-content: space-between;
 }
 
+.error-message {
+    display: none;
+    animation: opacity-transition 500ms linear;
+}
+
 /* 4.1.2.3.2 Input */
 
 .sign-up-card article footer form input[type="email"] {
@@ -273,6 +278,7 @@ img {
 .sign-up-card article footer form input[type="email"].error {
     border: 1px solid var(--vermillion);
     background: var(--vermillion-transparent);
+    animation: opacity-transition 500ms linear;
 }
 
 /* 4.2 Success message modal */
@@ -390,6 +396,11 @@ button:hover::before {
 /* 6. Animations */
 
 @keyframes opacity-transition {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -62,11 +62,12 @@
                         <label for="email" class="roboto-bold">
                             Email address
                         </label>
-                        <p class="error-message roboto-bold">
+                        <p class="error-message roboto-bold" id="error-message">
                             Valid email required
                         </p>
                     </div>
-                    <input type="email" class="roboto-regular" id="email" placeholder="email@company.com" autocomplete="email" required>
+                    <input type="email" class="roboto-regular" name="email" id="email" placeholder="email@company.com"
+                        autocomplete="email" required>
                     <button type="submit" class="roboto-bold" id="subscribe-button">
                         Subscribe to monthly newsletter
                     </button>
@@ -87,10 +88,7 @@
                 </h2>
             </header>
             <p>
-                A confirmation email has been sent to <span class="roboto-bold">ash@loremcompany.com</span>. Please open
-                it and click the button
-                inside to
-                confirm your subscription.
+                A confirmation email has been sent to <span class="roboto-bold" id="user-email">placeholder</span>. Please open it and click the button inside to confirm your subscription.
             </p>
             <footer>
                 <button type="button" class="roboto-bold" id="dismiss-button">
@@ -101,6 +99,6 @@
     </div>
 </body>
 
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 
 </html>

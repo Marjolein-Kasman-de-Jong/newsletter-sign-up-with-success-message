@@ -8,17 +8,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <title>Newsletter Sign Up With Success Message</title>
 </head>
 
 <body>
     <!-- Sign up card -->
-    <main class="sign-up-card" id="sign-up-card">
+    <main 
+        class="sign-up-card" 
+        id="sign-up-card"
+    >
         <div class="image-wrapper">
             <picture>
-                <source media="(min-width: 1025px )" srcset="assets\illustration-sign-up-desktop.svg">
-                <img src="assets\illustration-sign-up-mobile.svg"
-                    alt="A computer screen, a browser window, a graph and a speed sign with the number 94 on it">
+                <source 
+                    media="(min-width: 1025px )" 
+                    srcset="assets\illustration-sign-up-desktop.svg"
+                >
+                <img 
+                    src="assets\illustration-sign-up-mobile.svg"
+                    alt="A computer screen, a browser window, a graph and a speed sign with the number 94 on it"
+                >
             </picture>
         </div>
         <article class="roboto-regular">
@@ -33,7 +42,10 @@
             <ul>
                 <li>
                     <div class="image-wrapper">
-                        <img src="assets\icon-list.svg" alt="Check mark">
+                        <img 
+                            src="assets\icon-list.svg" 
+                            alt="Check mark"
+                        >
                     </div>
                     <p>
                         Product discovery and building what matters
@@ -41,7 +53,10 @@
                 </li>
                 <li>
                     <div class="image-wrapper">
-                        <img src="assets\icon-list.svg" alt="Check mark">
+                        <img 
+                            src="assets\icon-list.svg" 
+                            alt="Check mark"
+                        >
                     </div>
                     <p>
                         Measuring to ensure updates are a success
@@ -49,7 +64,10 @@
                 </li>
                 <li>
                     <div class="image-wrapper">
-                        <img src="assets\icon-list.svg" alt="Check mark">
+                        <img 
+                            src="assets\icon-list.svg" 
+                            alt="Check mark"
+                        >
                     </div>
                     <p>
                         And much more!
@@ -59,16 +77,33 @@
             <footer>
                 <form action="">
                     <div class="label-wrapper">
-                        <label for="email" class="roboto-bold">
+                        <label 
+                            for="email" 
+                            class="roboto-bold"
+                        >
                             Email address
                         </label>
-                        <p class="error-message roboto-bold" id="error-message">
+                        <p 
+                            class="error-message roboto-bold" 
+                            id="error-message"
+                        >
                             Valid email required
                         </p>
                     </div>
-                    <input type="email" class="roboto-regular" name="email" id="email" placeholder="email@company.com"
-                        autocomplete="email" required>
-                    <button type="submit" class="roboto-bold" id="subscribe-button">
+                    <input 
+                        type="email" 
+                        class="roboto-regular" 
+                        name="email" 
+                        id="email" 
+                        placeholder="email@company.com"
+                        autocomplete="email" 
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="roboto-bold" 
+                        id="subscribe-button"
+                    >
                         Subscribe to monthly newsletter
                     </button>
                 </form>
@@ -77,9 +112,15 @@
     </main>
 
     <!-- Success message modal -->
-    <div class="success-message-modal" id="success-message-modal">
+    <div 
+        class="success-message-modal" 
+        id="success-message-modal"
+    >
         <div class="image-wrapper">
-            <img src="assets\icon-success.svg" alt="Success icon">
+            <img 
+                src="assets\icon-success.svg" 
+                alt="Success icon"
+            >
         </div>
         <article class="roboto-regular">
             <header>
@@ -88,10 +129,21 @@
                 </h2>
             </header>
             <p>
-                A confirmation email has been sent to <span class="roboto-bold" id="user-email">placeholder</span>. Please open it and click the button inside to confirm your subscription.
+                A confirmation email has been sent to 
+                    <span 
+                        class="roboto-bold" 
+                        id="user-email"
+                    >
+                        placeholder
+                    </span>
+                . Please open it and click the button inside to confirm your subscription.
             </p>
             <footer>
-                <button type="button" class="roboto-bold" id="dismiss-button">
+                <button 
+                    type="button" 
+                    class="roboto-bold" 
+                    id="dismiss-button"
+                >
                     Dismiss message
                 </button>
             </footer>

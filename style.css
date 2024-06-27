@@ -80,7 +80,7 @@ h2 {
     line-height: 100%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
 
     h1,
     h2 {
@@ -134,14 +134,15 @@ button.roboto-bold {
 /* 4. Layout */
 
 body {
-    background-color: var(--pale-navy);
+    background-color: var(--white);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     body {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--pale-navy);
     }
 }
 
@@ -163,9 +164,9 @@ img {
     background-color: var(--white);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     .sign-up-card {
-        width: 95%;
+        width: 64.44%;
         max-width: 1000px;
         min-height: unset;
         margin: unset;
@@ -179,15 +180,9 @@ img {
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .sign-up-card {
-        width: 64.44%;
-    }
-}
-
 /* 4.1.1 Sign up card image */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     .sign-up-card .image-wrapper {
         width: 47.62%;
     }
@@ -200,7 +195,7 @@ img {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     .sign-up-card article {
         width: 44.76%;
         margin: unset;
@@ -313,7 +308,7 @@ button:hover::before {
     opacity: 1;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     button:hover {
         cursor: pointer;
         background: transparent; /* Set to transparent to let the gradient show through */

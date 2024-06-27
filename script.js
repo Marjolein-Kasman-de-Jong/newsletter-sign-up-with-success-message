@@ -1,5 +1,5 @@
 // Modules
-import validateEmail from "/validateEmail.js";
+import validateEmail from "validateEmail.js";
 
 // Get elements
 const signUpCard = document.getElementById("sign-up-card");

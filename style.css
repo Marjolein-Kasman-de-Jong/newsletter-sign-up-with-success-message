@@ -245,6 +245,17 @@ img {
 .sign-up-card article ul li .image-wrapper img {
     width: 21px;
     height: 21px;
+    animation-name: grow-and-shrink;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.sign-up-card article ul li:nth-of-type(2) .image-wrapper img {
+    animation-delay: 2s;
+}
+
+.sign-up-card article ul li:nth-of-type(3) .image-wrapper img {
+    animation-delay: 4s;
 }
 
 /* 4.1.2.3 Footer */
@@ -316,6 +327,9 @@ img {
 
 .success-message-modal .image-wrapper {
     width: 64px;
+    animation-name: grow-and-shrink;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 /* 4.2.2 Article */
@@ -402,5 +416,27 @@ button:hover::before {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes grow-and-shrink {
+    0% {
+        scale: 1;
+    }
+
+    25% {
+        scale: .75;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    75% {
+        scale: .75;
+    }
+
+    100% {
+        scale: 1;
     }
 }
